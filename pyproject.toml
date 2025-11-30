@@ -37,7 +37,8 @@ dev = [
 docs = [
     "sphinx",
     "sphinx-autodoc-typehints",
-    "sphinx-rtd-theme"
+    "sphinx-rtd-theme",
+    "sphinx-rtd-dark-mode"
 ]
 
 [project.urls]

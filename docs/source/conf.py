@@ -33,6 +33,7 @@ extensions = [
     "sphinx.ext.napoleon",       # Support for Google/NumPy style docstrings
     "sphinx.ext.viewcode",       # Add links to highlighted source code
     "sphinx_autodoc_typehints",  # Render type hints nicely in the docs
+    "sphinx_rtd_dark_mode",      # Dark mode support for Read the Docs theme
 ]
 
 autosummary_generate = True      # Turn on autosummary
@@ -47,3 +48,15 @@ exclude_patterns: list[str] = []
 
 html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
+
+# ---------------------------------------------------------------------------
+# Autodoc options
+# ---------------------------------------------------------------------------
+
+autodoc_default_options = {
+    "members": True,
+    "undoc-members": True,
+    "show-inheritance": True,
+}
+
+autodoc_typehints = "description"
